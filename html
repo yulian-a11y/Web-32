@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Bacaan & Diskusi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Bagian Artikel -->
+        <article id="artikel-container">
+            <h1 id="judul-artikel">Memuat Judul...</h1>
+            <p class="meta">Ditulis oleh: <span id="penulis-artikel" class="author-name">...</span></p>
+            
+            <img id="gambar-artikel" src="" alt="Ilustrasi Artikel">
+            
+            <div id="konten-artikel" class="konten"></div>
+            
+            <!-- Bagian Interaksi -->
+            <div class="interaksi-bar">
+                <button id="btn-suka" class="btn btn-suka">
+                    👍 Suka (<span id="angka-suka">0</span>)
+                </button>
+                <button id="btn-tidak-suka" class="btn btn-tidak-suka">
+                    👎 Tidak Suka (<span id="angka-tidak-suka">0</span>)
+                </button>
+            </div>
+        </article>
+
+        <!-- Bagian Komentar -->
+        <section class="komentar-section">
+            <h2>Komentar Diskusi</h2>
+            <div class="form-komentar">
+                <input type="text" id="nama-komentator" placeholder="Nama Anda (Opsional)">
+                <textarea id="input-komentar" placeholder="Tulis pendapat atau teori Anda di sini..."></textarea>
+                <button id="btn-kirim-komentar">Kirim Komentar</button>
+            </div>
+            
+            <div id="daftar-komentar" class="daftar-komentar">
+                <!-- Komentar dari pengguna akan muncul di sini -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
